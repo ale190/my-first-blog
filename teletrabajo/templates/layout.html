@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--<html lang="en" dir="ltr"> 1era opción-->
+<html lang="es" dir="ltr"> <!--2da opción-->
+  <head>
+    <meta charset="utf-8">
+    <title>{% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}"/>
+  </head>
+  <body>
+    {% block contenido %}{% endblock %}
+  </body>
+</html>
