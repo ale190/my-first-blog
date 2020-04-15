@@ -55,7 +55,7 @@ ROOT_URLCONF = 'teletrabajo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['teletrabajo/templates'],
+        'DIRS': ['teletrabajo/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
