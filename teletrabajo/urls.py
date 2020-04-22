@@ -25,4 +25,4 @@ urlpatterns = [
     path('', views.hello_world, name='home'),
 ]
 
-#urlpatterns += staticfiles_urlpatterns()
+urlpatterns += staticfiles_urlpatterns()
