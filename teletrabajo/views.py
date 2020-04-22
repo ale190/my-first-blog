@@ -3,4 +3,4 @@ from django.shortcuts import render # 2da opción
 
 def hello_world(request):
     #return HttpResponse("Hola Mundo") 1era opción
-    return render(request, 'home.html') # 2da opción
+    return render(request, 'HOME.html') # 2da opción
