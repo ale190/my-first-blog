@@ -26,7 +26,7 @@ SECRET_KEY = '=t%*(6*m87$mlgb-4^i7b8r&_9t$bz9-1#bz5h09p^vq!=cy)s'
 DEBUG = True #Cambiar a False al subir el proyecto a la web.
 
 #ALLOWED_HOSTS = ['themosketers.pythonanywhere.com',]
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['themosketers.pythonanywhere.com']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tareas',    
+    'tareas',
 ]
 
 MIDDLEWARE = [
