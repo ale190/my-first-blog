@@ -1,5 +1,26 @@
+<h2 align="center">Área para miembros</h2>
+<h4>
+  Bienvenido <b>{{request.user.username}}!</b>
+</h4>
+<table border="2">
+  <tr>
+    <th>Tarea</th>
+    <th>Descripción</th>
+    <th>Comentarios</th>
+  </tr>
 {% for tarea in tareas %} <!--Código python-->
- <h2>{{ tarea.titulo }}</h2> <!--Impresión de una variable-->
- {{ tarea.descripcion }}
- holas vienen van
+  <tr>
+    <td>{{tarea.titulo}}</td> <!--Impresión de una variable-->
+    <td>{{tarea.descripcion}}</td>
+    <td>{{tarea.comentarios}}</td>
+  </tr>
 {% endfor %}
+</table>
+
+<a href="{% url 'reporte_excel_tarea' %}">Exportar a Excel</a>
+
+<br><br>
+
+<hr/>
+
+<a href="/logout">Cerrar sesión</a>

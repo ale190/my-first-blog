@@ -25,7 +25,8 @@ SECRET_KEY = '=t%*(6*m87$mlgb-4^i7b8r&_9t$bz9-1#bz5h09p^vq!=cy)s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #Cambiar a False al subir el proyecto a la web.
 
-ALLOWED_HOSTS = ['themosketers.pythonanywhere.com',]
+#ALLOWED_HOSTS = ['themosketers.pythonanywhere.com',]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tareas',
+    'tareas',    
 ]
 
 MIDDLEWARE = [
@@ -55,8 +56,8 @@ ROOT_URLCONF = 'teletrabajo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #'DIRS': ['teletrabajo/templates'],
         'DIRS': ['teletrabajo/'],
+        #'DIRS': ['teletrabajo/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,7 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 

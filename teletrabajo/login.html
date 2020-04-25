@@ -1,0 +1,15 @@
+<h2>iniciar sesión</h2>
+
+<form method="post">
+  {{ form.as_p }}
+  {% csrf_token %}
+  <button type="submit">Ingresar</button>
+</form>
+
+<hr/>
+
+<a href="admin/">Ingreso de administrador</a>
+
+<div/>
+
+<a href="/register">Registrar usuario</a>
