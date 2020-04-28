@@ -2,7 +2,7 @@ from django.shortcuts import render
 #from django.http import HttpResponse 1era opción
 
 #from openpyxl import Workbook
-from django.http.response import HttpResponse
+#from django.http.response import HttpResponse
 #from django.views.generic import TemplateView
 
 from .models import Tarea
