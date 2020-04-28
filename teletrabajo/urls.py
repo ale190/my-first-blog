@@ -21,10 +21,10 @@ from . import views
 #from . import views
 
 urlpatterns = [
-    path('', views.welcome),
+    #path('welcome', views.welcome),
     path('register', views.register),
-    path('login', views.login),
-    path('logout', views.logout),    
+    path('', views.login),
+    path('logout', views.logout),
     path('tareas/', include('tareas.urls')),
     path('admin/', admin.site.urls),
     #path('', views.hello_world, name='home'),

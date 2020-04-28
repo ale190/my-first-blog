@@ -12,12 +12,12 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as do_login
 from django.contrib.auth.forms import UserCreationForm
 
-def welcome(request):
+#def welcome(request):
     #Si estamos identificados devolvemos a la portada
-    if request.user.is_authenticated:
+#    if request.user.is_authenticated:
         #return render(request, "welcome.html")
-        return render(request, "welcome.html")
-    return redirect('/login')
+#        return render(request, "welcome.html")
+#    return redirect('/login')
 
 def register(request):
     #Creamos el formulario de autenticación vacío
@@ -59,7 +59,7 @@ def login(request):
                 #Hacemos el login manualmente
                 do_login(request, user)
                 #Y le redireccionamos a la portada
-                return redirect('tareas/tareas_lista')
+                return redirect('tareas/')
     #Si llegamos al final renderizamos el formulario
     return render(request, "login.html", {'form': form})
 
